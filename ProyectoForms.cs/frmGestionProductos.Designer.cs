@@ -42,7 +42,7 @@
             this.txtCd = new System.Windows.Forms.TextBox();
             this.textBoxYourname = new System.Windows.Forms.TextBox();
             this.textBDS = new System.Windows.Forms.TextBox();
-            this.bttcargar = new System.Windows.Forms.Button();
+            this.btnGrabar = new System.Windows.Forms.Button();
             this.pictureBoxDOS = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttmodifique = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@
             this.textBX1.Location = new System.Drawing.Point(125, 141);
             this.textBX1.Name = "textBX1";
             this.textBX1.Size = new System.Drawing.Size(60, 20);
-            this.textBX1.TabIndex = 8;
+            this.textBX1.TabIndex = 3;
             // 
             // combitobox
             // 
@@ -138,7 +138,7 @@
             this.combitobox.Location = new System.Drawing.Point(125, 173);
             this.combitobox.Name = "combitobox";
             this.combitobox.Size = new System.Drawing.Size(141, 21);
-            this.combitobox.TabIndex = 9;
+            this.combitobox.TabIndex = 4;
             // 
             // texpaquete
             // 
@@ -146,7 +146,7 @@
             this.texpaquete.Location = new System.Drawing.Point(125, 112);
             this.texpaquete.Name = "texpaquete";
             this.texpaquete.Size = new System.Drawing.Size(60, 20);
-            this.texpaquete.TabIndex = 10;
+            this.texpaquete.TabIndex = 2;
             // 
             // txtCd
             // 
@@ -154,7 +154,7 @@
             this.txtCd.Location = new System.Drawing.Point(125, 81);
             this.txtCd.Name = "txtCd";
             this.txtCd.Size = new System.Drawing.Size(141, 20);
-            this.txtCd.TabIndex = 11;
+            this.txtCd.TabIndex = 1;
             // 
             // textBoxYourname
             // 
@@ -162,7 +162,7 @@
             this.textBoxYourname.Location = new System.Drawing.Point(125, 52);
             this.textBoxYourname.Name = "textBoxYourname";
             this.textBoxYourname.Size = new System.Drawing.Size(141, 20);
-            this.textBoxYourname.TabIndex = 12;
+            this.textBoxYourname.TabIndex = 0;
             // 
             // textBDS
             // 
@@ -171,20 +171,20 @@
             this.textBDS.Multiline = true;
             this.textBDS.Name = "textBDS";
             this.textBDS.Size = new System.Drawing.Size(141, 81);
-            this.textBDS.TabIndex = 13;
+            this.textBDS.TabIndex = 5;
             // 
-            // bttcargar
+            // btnGrabar
             // 
-            this.bttcargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bttcargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttcargar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bttcargar.Location = new System.Drawing.Point(28, 443);
-            this.bttcargar.Name = "bttcargar";
-            this.bttcargar.Size = new System.Drawing.Size(113, 34);
-            this.bttcargar.TabIndex = 14;
-            this.bttcargar.Text = "Cargar";
-            this.bttcargar.UseVisualStyleBackColor = false;
-            this.bttcargar.Click += new System.EventHandler(this.bttcargar_Click);
+            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGrabar.Location = new System.Drawing.Point(28, 443);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(113, 34);
+            this.btnGrabar.TabIndex = 6;
+            this.btnGrabar.Text = "&Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.bttcargar_Click);
             // 
             // pictureBoxDOS
             // 
@@ -214,7 +214,7 @@
             this.buttmodifique.Location = new System.Drawing.Point(192, 443);
             this.buttmodifique.Name = "buttmodifique";
             this.buttmodifique.Size = new System.Drawing.Size(122, 34);
-            this.buttmodifique.TabIndex = 16;
+            this.buttmodifique.TabIndex = 7;
             this.buttmodifique.Text = "Modificar";
             this.buttmodifique.UseVisualStyleBackColor = false;
             this.buttmodifique.Click += new System.EventHandler(this.buttmodifique_Click);
@@ -227,7 +227,7 @@
             this.ClientSize = new System.Drawing.Size(340, 510);
             this.Controls.Add(this.buttmodifique);
             this.Controls.Add(this.pictureBoxDOS);
-            this.Controls.Add(this.bttcargar);
+            this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.textBDS);
             this.Controls.Add(this.textBoxYourname);
             this.Controls.Add(this.txtCd);
@@ -270,7 +270,7 @@
         private System.Windows.Forms.TextBox txtCd;
         private System.Windows.Forms.TextBox textBoxYourname;
         private System.Windows.Forms.TextBox textBDS;
-        private System.Windows.Forms.Button bttcargar;
+        private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.PictureBox pictureBoxDOS;
         private System.Windows.Forms.Button buttmodifique;
     }
