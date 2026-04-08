@@ -10,9 +10,17 @@ using System.Windows.Forms;
 
 namespace ProyectoForms.cs
 {
-    public partial class Form1 : Form
+    public partial class frmGestionProductos : Form
     {
-        public Form1()
+        //DECLARACION DE VARIABLES GLOBALES
+        int varIdProducto;
+        string varNombreProducto;
+        string varDescripcion;
+        int varStock;
+        int varPrecio;
+        string varCategoria;
+
+        public frmGestionProductos()
         {
             InitializeComponent();
         }
@@ -32,6 +40,11 @@ namespace ProyectoForms.cs
         }
 
         private void buttmodifique_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmGestionProductos_Load(object sender, EventArgs e)
         {
 
         }

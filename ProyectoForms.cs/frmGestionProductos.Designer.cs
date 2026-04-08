@@ -1,6 +1,6 @@
 ﻿namespace ProyectoForms.cs
 {
-    partial class Form1
+    partial class frmGestionProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionProductos));
             this.lblG = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.lblcode = new System.Windows.Forms.Label();
@@ -116,7 +117,7 @@
             // 
             this.lbldescription.AutoSize = true;
             this.lbldescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldescription.Location = new System.Drawing.Point(12, 216);
+            this.lbldescription.Location = new System.Drawing.Point(25, 216);
             this.lbldescription.Name = "lbldescription";
             this.lbldescription.Size = new System.Drawing.Size(94, 16);
             this.lbldescription.TabIndex = 7;
@@ -125,16 +126,16 @@
             // textBX1
             // 
             this.textBX1.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textBX1.Location = new System.Drawing.Point(112, 142);
+            this.textBX1.Location = new System.Drawing.Point(125, 141);
             this.textBX1.Name = "textBX1";
-            this.textBX1.Size = new System.Drawing.Size(141, 20);
+            this.textBX1.Size = new System.Drawing.Size(60, 20);
             this.textBX1.TabIndex = 8;
             // 
             // combitobox
             // 
             this.combitobox.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.combitobox.FormattingEnabled = true;
-            this.combitobox.Location = new System.Drawing.Point(112, 174);
+            this.combitobox.Location = new System.Drawing.Point(125, 173);
             this.combitobox.Name = "combitobox";
             this.combitobox.Size = new System.Drawing.Size(141, 21);
             this.combitobox.TabIndex = 9;
@@ -142,15 +143,15 @@
             // texpaquete
             // 
             this.texpaquete.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.texpaquete.Location = new System.Drawing.Point(112, 113);
+            this.texpaquete.Location = new System.Drawing.Point(125, 112);
             this.texpaquete.Name = "texpaquete";
-            this.texpaquete.Size = new System.Drawing.Size(141, 20);
+            this.texpaquete.Size = new System.Drawing.Size(60, 20);
             this.texpaquete.TabIndex = 10;
             // 
             // txtCd
             // 
             this.txtCd.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.txtCd.Location = new System.Drawing.Point(112, 82);
+            this.txtCd.Location = new System.Drawing.Point(125, 81);
             this.txtCd.Name = "txtCd";
             this.txtCd.Size = new System.Drawing.Size(141, 20);
             this.txtCd.TabIndex = 11;
@@ -158,7 +159,7 @@
             // textBoxYourname
             // 
             this.textBoxYourname.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textBoxYourname.Location = new System.Drawing.Point(112, 53);
+            this.textBoxYourname.Location = new System.Drawing.Point(125, 52);
             this.textBoxYourname.Name = "textBoxYourname";
             this.textBoxYourname.Size = new System.Drawing.Size(141, 20);
             this.textBoxYourname.TabIndex = 12;
@@ -166,7 +167,7 @@
             // textBDS
             // 
             this.textBDS.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textBDS.Location = new System.Drawing.Point(112, 215);
+            this.textBDS.Location = new System.Drawing.Point(125, 215);
             this.textBDS.Multiline = true;
             this.textBDS.Name = "textBDS";
             this.textBDS.Size = new System.Drawing.Size(141, 81);
@@ -218,7 +219,7 @@
             this.buttmodifique.UseVisualStyleBackColor = false;
             this.buttmodifique.Click += new System.EventHandler(this.buttmodifique_Click);
             // 
-            // Form1
+            // frmGestionProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -241,8 +242,11 @@
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.lblG);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmGestionProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gestión de productos - PETSHOP";
+            this.Load += new System.EventHandler(this.frmGestionProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDOS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
