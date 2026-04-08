@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,6 @@ namespace ProyectoForms.cs
 
         private void bttcargar_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void buttmodifique_Click(object sender, EventArgs e)
@@ -45,15 +45,30 @@ namespace ProyectoForms.cs
             varPrecio = 0;
             varDescripcion = "";
 
-            textBoxYourname.Text = "melina";
-            txtCd.Text = "1314";
+            textBoxNombre.Text = "melina";
+            textCodigo.Text = "1314";
             texpaquete.Text = "queda un paquete disponiple";
-            textBX1.Text = "$13123";
-            combitobox.Items.Add("Alimento");
-            combitobox.Items.Add("Juguetes");
-            combitobox.Items.Add("Ropa");
-            textBDS.Text = "Que el pedido este ready";
+            textPrecio.Text = "$13123";
+            comboboxcategoria.Items.Add("Alimento");
+            comboboxcategoria.Items.Add("Juguetes");
+            comboboxcategoria.Items.Add("Ropa");
+            textboxDescrepcion.Text = "Que el pedido este ready";
+
+
+
+
 
         }
+
+
+        private void textCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+            
+        }
     }
-}
+
+
+
