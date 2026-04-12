@@ -118,13 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="64582004-mascota-centro-icono-del-departamento-de-diseño-de-ilustración-vectorial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\64582004-mascota-centro-icono-del-departamento-de-diseño-de-ilustración-vectorial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="yellow-fancy-dog-puppy-avatar-badge-poster-logo-templates-print-illustration-in-flat-cartoon-style-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellow-fancy-dog-puppy-avatar-badge-poster-logo-templates-print-illustration-in-flat-cartoon-style-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yellow-fancy-dog-puppy-avatar-badge-poster-logo-templates-print-illustration-in-flat-cartoon-style-vector (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellow-fancy-dog-puppy-avatar-badge-poster-logo-templates-print-illustration-in-flat-cartoon-style-vector (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="64582004-mascota-centro-icono-del-departamento-de-diseño-de-ilustración-vectorial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\64582004-mascota-centro-icono-del-departamento-de-diseño-de-ilustración-vectorial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="56373640-hueso-de-perro-de-juguete-tema-de-ilustración-de-arte-vectorial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\56373640-hueso-de-perro-de-juguete-tema-de-ilustración-de-arte-vectorial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

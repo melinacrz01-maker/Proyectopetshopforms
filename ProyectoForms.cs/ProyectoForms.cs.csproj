@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="iconoPetshop.ico" />
+    <None Include="Resources\56373640-hueso-de-perro-de-juguete-tema-de-ilustración-de-arte-vectorial.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

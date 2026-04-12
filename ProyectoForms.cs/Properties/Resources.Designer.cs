@@ -63,6 +63,16 @@ namespace ProyectoForms.cs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _56373640_hueso_de_perro_de_juguete_tema_de_ilustración_de_arte_vectorial {
+            get {
+                object obj = ResourceManager.GetObject("56373640-hueso-de-perro-de-juguete-tema-de-ilustración-de-arte-vectorial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _64582004_mascota_centro_icono_del_departamento_de_diseño_de_ilustración_vectorial {
             get {
                 object obj = ResourceManager.GetObject("64582004-mascota-centro-icono-del-departamento-de-diseño-de-ilustración-vectorial" +
