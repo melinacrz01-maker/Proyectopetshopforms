@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionProductos));
-            this.lblG = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.lblcode = new System.Windows.Forms.Label();
             this.lblStockk = new System.Windows.Forms.Label();
@@ -37,11 +37,11 @@
             this.lblCategory = new System.Windows.Forms.Label();
             this.lbldescription = new System.Windows.Forms.Label();
             this.textPrecio = new System.Windows.Forms.TextBox();
-            this.comboboxcategoria = new System.Windows.Forms.ComboBox();
+            this.cmbcategoria = new System.Windows.Forms.ComboBox();
             this.texpaquete = new System.Windows.Forms.TextBox();
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textboxDescrepcion = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.buttmodifique = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -55,19 +55,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImagenUno)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblG
+            // lblTitulo
             // 
-            this.lblG.AutoSize = true;
-            this.lblG.BackColor = System.Drawing.Color.Gold;
-            this.lblG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblG.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblG.ForeColor = System.Drawing.Color.Black;
-            this.lblG.Location = new System.Drawing.Point(63, 9);
-            this.lblG.Name = "lblG";
-            this.lblG.Size = new System.Drawing.Size(265, 24);
-            this.lblG.TabIndex = 1;
-            this.lblG.Text = "Gestión de Productos Petshop";
-            this.lblG.Click += new System.EventHandler(this.lblG_Click);
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Gold;
+            this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
+            this.lblTitulo.Location = new System.Drawing.Point(63, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(265, 24);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "Gestión de Productos Petshop";
+            this.lblTitulo.Click += new System.EventHandler(this.lblG_Click);
             // 
             // lblname
             // 
@@ -144,20 +144,20 @@
             this.textPrecio.TabIndex = 3;
             this.textPrecio.TextChanged += new System.EventHandler(this.textPrecio_TextChanged);
             // 
-            // comboboxcategoria
+            // cmbcategoria
             // 
-            this.comboboxcategoria.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.comboboxcategoria.FormattingEnabled = true;
-            this.comboboxcategoria.Items.AddRange(new object[] {
+            this.cmbcategoria.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.cmbcategoria.FormattingEnabled = true;
+            this.cmbcategoria.Items.AddRange(new object[] {
             "Alimentos",
             "Juguetes",
             "Ropa",
             "Collares "});
-            this.comboboxcategoria.Location = new System.Drawing.Point(125, 173);
-            this.comboboxcategoria.Name = "comboboxcategoria";
-            this.comboboxcategoria.Size = new System.Drawing.Size(141, 21);
-            this.comboboxcategoria.TabIndex = 4;
-            this.comboboxcategoria.SelectedIndexChanged += new System.EventHandler(this.comboboxcategoria_SelectedIndexChanged);
+            this.cmbcategoria.Location = new System.Drawing.Point(125, 173);
+            this.cmbcategoria.Name = "cmbcategoria";
+            this.cmbcategoria.Size = new System.Drawing.Size(141, 21);
+            this.cmbcategoria.TabIndex = 4;
+            this.cmbcategoria.SelectedIndexChanged += new System.EventHandler(this.comboboxcategoria_SelectedIndexChanged);
             // 
             // texpaquete
             // 
@@ -186,15 +186,15 @@
             this.textBoxNombre.TabIndex = 0;
             this.textBoxNombre.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
             // 
-            // textboxDescrepcion
+            // txtDescripcion
             // 
-            this.textboxDescrepcion.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textboxDescrepcion.Location = new System.Drawing.Point(125, 215);
-            this.textboxDescrepcion.Multiline = true;
-            this.textboxDescrepcion.Name = "textboxDescrepcion";
-            this.textboxDescrepcion.Size = new System.Drawing.Size(141, 81);
-            this.textboxDescrepcion.TabIndex = 5;
-            this.textboxDescrepcion.TextChanged += new System.EventHandler(this.textboxDescrepcion_TextChanged);
+            this.txtDescripcion.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.txtDescripcion.Location = new System.Drawing.Point(125, 215);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(141, 81);
+            this.txtDescripcion.TabIndex = 5;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.textboxDescrepcion_TextChanged);
             // 
             // btnGrabar
             // 
@@ -295,11 +295,11 @@
             this.Controls.Add(this.buttmodifique);
             this.Controls.Add(this.Imagendos);
             this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.textboxDescrepcion);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.textCodigo);
             this.Controls.Add(this.texpaquete);
-            this.Controls.Add(this.comboboxcategoria);
+            this.Controls.Add(this.cmbcategoria);
             this.Controls.Add(this.textPrecio);
             this.Controls.Add(this.lbldescription);
             this.Controls.Add(this.lblCategory);
@@ -307,7 +307,7 @@
             this.Controls.Add(this.lblStockk);
             this.Controls.Add(this.lblcode);
             this.Controls.Add(this.lblname);
-            this.Controls.Add(this.lblG);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.ImagenUno);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestionProductos";
@@ -326,7 +326,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox ImagenUno;
-        private System.Windows.Forms.Label lblG;
+        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label lblcode;
         private System.Windows.Forms.Label lblStockk;
@@ -334,11 +334,11 @@
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Label lbldescription;
         private System.Windows.Forms.TextBox textPrecio;
-        private System.Windows.Forms.ComboBox comboboxcategoria;
+        private System.Windows.Forms.ComboBox cmbcategoria;
         private System.Windows.Forms.TextBox texpaquete;
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.TextBox textboxDescrepcion;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.PictureBox Imagendos;
         private System.Windows.Forms.Button buttmodifique;

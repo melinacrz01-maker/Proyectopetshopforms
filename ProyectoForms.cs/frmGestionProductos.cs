@@ -63,8 +63,8 @@ namespace ProyectoForms.cs
                 "Collares"
             };
 
-            comboboxcategoria.Items.Clear();
-            comboboxcategoria.Items.AddRange(categorias.ToArray());
+            cmbcategoria.Items.Clear();
+            cmbcategoria.Items.AddRange(categorias.ToArray());
         }
 
         private void bttcargar_Click(object sender, EventArgs e)
@@ -102,8 +102,8 @@ namespace ProyectoForms.cs
                 textCodigo.Text.Trim(),
                 stock,
                 precio,
-                comboboxcategoria.SelectedItem?.ToString() ?? "",
-                textboxDescrepcion.Text.Trim()
+                cmbcategoria.SelectedItem?.ToString() ?? "",
+                txtDescripcion.Text.Trim()
             );
 
             // Limpiar campos
@@ -111,8 +111,8 @@ namespace ProyectoForms.cs
             textCodigo.Clear();
             texpaquete.Clear();
             textPrecio.Clear();
-            textboxDescrepcion.Clear();
-            comboboxcategoria.SelectedIndex = -1;
+            txtDescripcion.Clear();
+            cmbcategoria.SelectedIndex = -1;
 
             MessageBox.Show("Producto grabado correctamente.", "Éxito",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -141,8 +141,8 @@ namespace ProyectoForms.cs
                 textCodigo.Clear();
                 texpaquete.Clear();
                 textPrecio.Clear();
-                textboxDescrepcion.Clear();
-                comboboxcategoria.SelectedIndex = -1;
+                txtDescripcion.Clear();
+                cmbcategoria.SelectedIndex = -1;
 
                 MessageBox.Show("Producto eliminado correctamente.", "Éxito",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -158,8 +158,8 @@ namespace ProyectoForms.cs
                 textCodigo.Text         = fila.Cells["Código"].Value.ToString();
                 texpaquete.Text         = fila.Cells["Stock"].Value.ToString();
                 textPrecio.Text         = fila.Cells["Precio"].Value.ToString();
-                textboxDescrepcion.Text = fila.Cells["Descripción"].Value.ToString();
-                comboboxcategoria.SelectedItem = fila.Cells["Categoría"].Value.ToString();
+                txtDescripcion.Text = fila.Cells["Descripción"].Value.ToString();
+                cmbcategoria.SelectedItem = fila.Cells["Categoría"].Value.ToString();
             }
         }
 
@@ -202,16 +202,16 @@ namespace ProyectoForms.cs
             fila["Código"]      = textCodigo.Text.Trim();
             fila["Stock"]       = stock;
             fila["Precio"]      = precio;
-            fila["Categoría"]   = comboboxcategoria.SelectedItem?.ToString() ?? "";
-            fila["Descripción"] = textboxDescrepcion.Text.Trim();
+            fila["Categoría"]   = cmbcategoria.SelectedItem?.ToString() ?? "";
+            fila["Descripción"] = txtDescripcion.Text.Trim();
 
             // Limpiar campos
             textBoxNombre.Clear();
             textCodigo.Clear();
             texpaquete.Clear();
             textPrecio.Clear();
-            textboxDescrepcion.Clear();
-            comboboxcategoria.SelectedIndex = -1;
+            txtDescripcion.Clear();
+            cmbcategoria.SelectedIndex = -1;
 
             MessageBox.Show("Producto modificado correctamente.", "Éxito",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
