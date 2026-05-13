@@ -30,7 +30,7 @@ namespace ProyectoForms.cs
 
         private void frmGestionProductos_Load(object sender, EventArgs e)
         {
-            // Inicializar variables
+            // Variables locales
             varIdProducto = 0;
             varNombreProducto = "";
             varCategoria = "";
@@ -38,7 +38,7 @@ namespace ProyectoForms.cs
             varPrecio = 0;
             varDescripcion = "";
 
-            // Inicializar tabla en memoria
+          
             tablaProductos = new DataTable();
             tablaProductos.Columns.Add("ID", typeof(int));
             tablaProductos.Columns.Add("Nombre", typeof(string));
@@ -63,56 +63,56 @@ namespace ProyectoForms.cs
                 "Collares"
             };
 
-            cmbcategoria.Items.Clear();
-            cmbcategoria.Items.AddRange(categorias.ToArray());
+            cmbCategoria.Items.Clear();
+            cmbCategoria.Items.AddRange(categorias.ToArray());
         }
 
         private void bttcargar_Click(object sender, EventArgs e)
         {
             // Validar campos obligatorios
-            if (string.IsNullOrWhiteSpace(textBoxNombre.Text) ||
-                string.IsNullOrWhiteSpace(textCodigo.Text) ||
-                string.IsNullOrWhiteSpace(texpaquete.Text) ||
-                string.IsNullOrWhiteSpace(textPrecio.Text))
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtCodigo.Text) ||
+                string.IsNullOrWhiteSpace(txtStock.Text) ||
+                string.IsNullOrWhiteSpace(txtPrecio.Text))
             {
                 MessageBox.Show("Por favor completá todos los campos obligatorios (Nombre, Código, Stock y Precio).",
                     "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!int.TryParse(texpaquete.Text, out int stock))
+            if (!int.TryParse(txtStock.Text, out int stock))
             {
                 MessageBox.Show("El Stock debe ser un número entero.", "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!int.TryParse(textPrecio.Text, out int precio))
+            if (!int.TryParse(txtPrecio.Text, out int precio))
             {
                 MessageBox.Show("El Precio debe ser un número entero.", "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Agregar fila a la tabla en memoria
+            
             varIdProducto++;
             tablaProductos.Rows.Add(
                 varIdProducto,
-                textBoxNombre.Text.Trim(),
-                textCodigo.Text.Trim(),
+                txtNombre.Text.Trim(),
+                txtCodigo.Text.Trim(),
                 stock,
                 precio,
-                cmbcategoria.SelectedItem?.ToString() ?? "",
+                cmbCategoria.SelectedItem?.ToString() ?? "",
                 txtDescripcion.Text.Trim()
             );
 
             // Limpiar campos
-            textBoxNombre.Clear();
-            textCodigo.Clear();
-            texpaquete.Clear();
-            textPrecio.Clear();
+            txtNombre.Clear();
+            txtCodigo.Clear();
+            txtStock.Clear();
+            txtPrecio.Clear();
             txtDescripcion.Clear();
-            cmbcategoria.SelectedIndex = -1;
+            cmbCategoria.SelectedIndex = -1;
 
             MessageBox.Show("Producto grabado correctamente.", "Éxito",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -137,12 +137,12 @@ namespace ProyectoForms.cs
                 int indice = dgvProductos.SelectedRows[0].Index;
                 tablaProductos.Rows[indice].Delete();
 
-                textBoxNombre.Clear();
-                textCodigo.Clear();
-                texpaquete.Clear();
-                textPrecio.Clear();
+                txtNombre.Clear();
+                txtCodigo.Clear();
+                txtStock.Clear();
+                txtPrecio.Clear();
                 txtDescripcion.Clear();
-                cmbcategoria.SelectedIndex = -1;
+                cmbCategoria.SelectedIndex = -1;
 
                 MessageBox.Show("Producto eliminado correctamente.", "Éxito",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -154,16 +154,16 @@ namespace ProyectoForms.cs
             if (dgvProductos.SelectedRows.Count > 0)
             {
                 DataGridViewRow fila = dgvProductos.SelectedRows[0];
-                textBoxNombre.Text      = fila.Cells["Nombre"].Value.ToString();
-                textCodigo.Text         = fila.Cells["Código"].Value.ToString();
-                texpaquete.Text         = fila.Cells["Stock"].Value.ToString();
-                textPrecio.Text         = fila.Cells["Precio"].Value.ToString();
+                txtNombre.Text      = fila.Cells["Nombre"].Value.ToString();
+                txtCodigo.Text         = fila.Cells["Código"].Value.ToString();
+                txtStock.Text         = fila.Cells["Stock"].Value.ToString();
+                txtPrecio.Text         = fila.Cells["Precio"].Value.ToString();
                 txtDescripcion.Text = fila.Cells["Descripción"].Value.ToString();
-                cmbcategoria.SelectedItem = fila.Cells["Categoría"].Value.ToString();
+                cmbCategoria.SelectedItem = fila.Cells["Categoría"].Value.ToString();
             }
         }
 
-        private void buttmodifique_Click(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)
         {
             if (dgvProductos.SelectedRows.Count == 0)
             {
@@ -172,24 +172,24 @@ namespace ProyectoForms.cs
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(textBoxNombre.Text) ||
-                string.IsNullOrWhiteSpace(textCodigo.Text) ||
-                string.IsNullOrWhiteSpace(texpaquete.Text) ||
-                string.IsNullOrWhiteSpace(textPrecio.Text))
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtCodigo.Text) ||
+                string.IsNullOrWhiteSpace(txtStock.Text) ||
+                string.IsNullOrWhiteSpace(txtPrecio.Text))
             {
                 MessageBox.Show("Por favor completá todos los campos obligatorios.",
                     "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!int.TryParse(texpaquete.Text, out int stock))
+            if (!int.TryParse(txtStock.Text, out int stock))
             {
                 MessageBox.Show("El Stock debe ser un número entero.", "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!int.TryParse(textPrecio.Text, out int precio))
+            if (!int.TryParse(txtPrecio.Text, out int precio))
             {
                 MessageBox.Show("El Precio debe ser un número entero.", "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -198,20 +198,20 @@ namespace ProyectoForms.cs
 
             int indice = dgvProductos.SelectedRows[0].Index;
             DataRow fila = tablaProductos.Rows[indice];
-            fila["Nombre"]      = textBoxNombre.Text.Trim();
-            fila["Código"]      = textCodigo.Text.Trim();
+            fila["Nombre"]      = txtNombre.Text.Trim();
+            fila["Código"]      = txtCodigo.Text.Trim();
             fila["Stock"]       = stock;
             fila["Precio"]      = precio;
-            fila["Categoría"]   = cmbcategoria.SelectedItem?.ToString() ?? "";
+            fila["Categoría"]   = cmbCategoria.SelectedItem?.ToString() ?? "";
             fila["Descripción"] = txtDescripcion.Text.Trim();
 
             // Limpiar campos
-            textBoxNombre.Clear();
-            textCodigo.Clear();
-            texpaquete.Clear();
-            textPrecio.Clear();
+            txtNombre.Clear();
+            txtCodigo.Clear();
+            txtStock.Clear();
+            txtPrecio.Clear();
             txtDescripcion.Clear();
-            cmbcategoria.SelectedIndex = -1;
+            cmbCategoria.SelectedIndex = -1;
 
             MessageBox.Show("Producto modificado correctamente.", "Éxito",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -221,31 +221,31 @@ namespace ProyectoForms.cs
         {
         }
 
-        private void lblname_Click(object sender, EventArgs e)
+        private void lblNombre_Click(object sender, EventArgs e)
         {
         }
 
-        private void lblcode_Click(object sender, EventArgs e)
+        private void lblCodigo_Click(object sender, EventArgs e)
         {
         }
 
-        private void lblStockk_Click(object sender, EventArgs e)
+        private void lblStock_Click(object sender, EventArgs e)
         {
         }
 
-        private void lblMoney_Click(object sender, EventArgs e)
+        private void lblPrecio_Click(object sender, EventArgs e)
         {
         }
 
-        private void lblCategory_Click(object sender, EventArgs e)
+        private void lblCategoria_Click(object sender, EventArgs e)
         {
         }
 
-        private void lbldescription_Click(object sender, EventArgs e)
+        private void lblDescripcion_Click(object sender, EventArgs e)
         {
         }
 
-        private void textPrecio_TextChanged(object sender, EventArgs e)
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
         {
         }
 
@@ -253,15 +253,15 @@ namespace ProyectoForms.cs
         {
         }
 
-        private void texpaquete_TextChanged(object sender, EventArgs e)
+        private void txtStock_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textCodigo_TextChanged(object sender, EventArgs e)
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textBoxNombre_TextChanged(object sender, EventArgs e)
+        private void txtNombre_TextChanged(object sender, EventArgs e)
         {
         }
 
@@ -269,11 +269,11 @@ namespace ProyectoForms.cs
         {
         }
 
-        private void Imagendos_Click(object sender, EventArgs e)
+        private void picImagenDos_Click(object sender, EventArgs e)
         {
         }
 
-        private void ImagenUno_Click(object sender, EventArgs e)
+        private void picImagenUno_Click(object sender, EventArgs e)
         {
         }
     }

@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionProductos));
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblname = new System.Windows.Forms.Label();
-            this.lblcode = new System.Windows.Forms.Label();
-            this.lblStockk = new System.Windows.Forms.Label();
-            this.lblMoney = new System.Windows.Forms.Label();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.lbldescription = new System.Windows.Forms.Label();
-            this.textPrecio = new System.Windows.Forms.TextBox();
-            this.cmbcategoria = new System.Windows.Forms.ComboBox();
-            this.texpaquete = new System.Windows.Forms.TextBox();
-            this.textCodigo = new System.Windows.Forms.TextBox();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.lblStock = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.buttmodifique = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.imagentres = new System.Windows.Forms.PictureBox();
-            this.Imagendos = new System.Windows.Forms.PictureBox();
-            this.ImagenUno = new System.Windows.Forms.PictureBox();
+            this.picImagenTres = new System.Windows.Forms.PictureBox();
+            this.picImagenDos = new System.Windows.Forms.PictureBox();
+            this.picImagenUno = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagentres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagendos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenUno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenTres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenDos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenUno)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -69,122 +69,122 @@
             this.lblTitulo.Text = "Gestión de Productos Petshop";
             this.lblTitulo.Click += new System.EventHandler(this.lblG_Click);
             // 
-            // lblname
+            // lblNombre
             // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(25, 57);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(66, 16);
-            this.lblname.TabIndex = 2;
-            this.lblname.Text = "Nombre:";
-            this.lblname.Click += new System.EventHandler(this.lblname_Click);
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(30, 52);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(66, 16);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Nombre:";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
-            // lblcode
+            // lblCodigo
             // 
-            this.lblcode.AutoSize = true;
-            this.lblcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcode.Location = new System.Drawing.Point(25, 83);
-            this.lblcode.Name = "lblcode";
-            this.lblcode.Size = new System.Drawing.Size(61, 16);
-            this.lblcode.TabIndex = 3;
-            this.lblcode.Text = "Código:";
-            this.lblcode.Click += new System.EventHandler(this.lblcode_Click);
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(30, 82);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(61, 16);
+            this.lblCodigo.TabIndex = 3;
+            this.lblCodigo.Text = "Código:";
+            this.lblCodigo.Click += new System.EventHandler(this.lblCodigo_Click);
             // 
-            // lblStockk
+            // lblStock
             // 
-            this.lblStockk.AutoSize = true;
-            this.lblStockk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStockk.Location = new System.Drawing.Point(25, 114);
-            this.lblStockk.Name = "lblStockk";
-            this.lblStockk.Size = new System.Drawing.Size(50, 16);
-            this.lblStockk.TabIndex = 4;
-            this.lblStockk.Text = "Stock:";
-            this.lblStockk.Click += new System.EventHandler(this.lblStockk_Click);
+            this.lblStock.AutoSize = true;
+            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStock.Location = new System.Drawing.Point(30, 112);
+            this.lblStock.Name = "lblStock";
+            this.lblStock.Size = new System.Drawing.Size(50, 16);
+            this.lblStock.TabIndex = 4;
+            this.lblStock.Text = "Stock:";
+            this.lblStock.Click += new System.EventHandler(this.lblStock_Click);
             // 
-            // lblMoney
+            // lblPrecio
             // 
-            this.lblMoney.AutoSize = true;
-            this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.Location = new System.Drawing.Point(25, 142);
-            this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(56, 16);
-            this.lblMoney.TabIndex = 5;
-            this.lblMoney.Text = "Precio:";
-            this.lblMoney.Click += new System.EventHandler(this.lblMoney_Click);
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(30, 142);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(56, 16);
+            this.lblPrecio.TabIndex = 5;
+            this.lblPrecio.Text = "Precio:";
+            this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
             // 
-            // lblCategory
+            // lblCategoria
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.Location = new System.Drawing.Point(25, 174);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(79, 16);
-            this.lblCategory.TabIndex = 6;
-            this.lblCategory.Text = "Categoría:";
-            this.lblCategory.Click += new System.EventHandler(this.lblCategory_Click);
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(30, 174);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(79, 16);
+            this.lblCategoria.TabIndex = 6;
+            this.lblCategoria.Text = "Categoría:";
+            this.lblCategoria.Click += new System.EventHandler(this.lblCategoria_Click);
             // 
-            // lbldescription
+            // lblDescripcion
             // 
-            this.lbldescription.AutoSize = true;
-            this.lbldescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldescription.Location = new System.Drawing.Point(25, 216);
-            this.lbldescription.Name = "lbldescription";
-            this.lbldescription.Size = new System.Drawing.Size(94, 16);
-            this.lbldescription.TabIndex = 7;
-            this.lbldescription.Text = "Descripción:";
-            this.lbldescription.Click += new System.EventHandler(this.lbldescription_Click);
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(30, 216);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(94, 16);
+            this.lblDescripcion.TabIndex = 7;
+            this.lblDescripcion.Text = "Descripción:";
+            this.lblDescripcion.Click += new System.EventHandler(this.lblDescripcion_Click);
             // 
-            // textPrecio
+            // txtPrecio
             // 
-            this.textPrecio.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textPrecio.Location = new System.Drawing.Point(125, 141);
-            this.textPrecio.Name = "textPrecio";
-            this.textPrecio.Size = new System.Drawing.Size(60, 20);
-            this.textPrecio.TabIndex = 3;
-            this.textPrecio.TextChanged += new System.EventHandler(this.textPrecio_TextChanged);
+            this.txtPrecio.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.txtPrecio.Location = new System.Drawing.Point(125, 141);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(60, 20);
+            this.txtPrecio.TabIndex = 3;
+            this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
-            // cmbcategoria
+            // cmbCategoria
             // 
-            this.cmbcategoria.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.cmbcategoria.FormattingEnabled = true;
-            this.cmbcategoria.Items.AddRange(new object[] {
+            this.cmbCategoria.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
             "Alimentos",
             "Juguetes",
             "Ropa",
             "Collares "});
-            this.cmbcategoria.Location = new System.Drawing.Point(125, 173);
-            this.cmbcategoria.Name = "cmbcategoria";
-            this.cmbcategoria.Size = new System.Drawing.Size(141, 21);
-            this.cmbcategoria.TabIndex = 4;
-            this.cmbcategoria.SelectedIndexChanged += new System.EventHandler(this.comboboxcategoria_SelectedIndexChanged);
+            this.cmbCategoria.Location = new System.Drawing.Point(125, 173);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(141, 21);
+            this.cmbCategoria.TabIndex = 4;
+            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.comboboxcategoria_SelectedIndexChanged);
             // 
-            // texpaquete
+            // txtStock
             // 
-            this.texpaquete.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.texpaquete.Location = new System.Drawing.Point(125, 112);
-            this.texpaquete.Name = "texpaquete";
-            this.texpaquete.Size = new System.Drawing.Size(60, 20);
-            this.texpaquete.TabIndex = 2;
-            this.texpaquete.TextChanged += new System.EventHandler(this.texpaquete_TextChanged);
+            this.txtStock.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.txtStock.Location = new System.Drawing.Point(125, 112);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(60, 20);
+            this.txtStock.TabIndex = 2;
+            this.txtStock.TextChanged += new System.EventHandler(this.txtStock_TextChanged);
             // 
-            // textCodigo
+            // txtCodigo
             // 
-            this.textCodigo.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textCodigo.Location = new System.Drawing.Point(125, 81);
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(141, 20);
-            this.textCodigo.TabIndex = 1;
-            this.textCodigo.TextChanged += new System.EventHandler(this.textCodigo_TextChanged);
+            this.txtCodigo.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.txtCodigo.Location = new System.Drawing.Point(125, 81);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(141, 20);
+            this.txtCodigo.TabIndex = 1;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
-            // textBoxNombre
+            // txtNombre
             // 
-            this.textBoxNombre.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.textBoxNombre.Location = new System.Drawing.Point(125, 52);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(141, 20);
-            this.textBoxNombre.TabIndex = 0;
-            this.textBoxNombre.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
+            this.txtNombre.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.txtNombre.Location = new System.Drawing.Point(125, 52);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(141, 20);
+            this.txtNombre.TabIndex = 0;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtDescripcion
             // 
@@ -209,17 +209,17 @@
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.bttcargar_Click);
             // 
-            // buttmodifique
+            // btnModificar
             // 
-            this.buttmodifique.BackColor = System.Drawing.Color.Red;
-            this.buttmodifique.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttmodifique.Location = new System.Drawing.Point(129, 415);
-            this.buttmodifique.Name = "buttmodifique";
-            this.buttmodifique.Size = new System.Drawing.Size(94, 34);
-            this.buttmodifique.TabIndex = 7;
-            this.buttmodifique.Text = "Modificar";
-            this.buttmodifique.UseVisualStyleBackColor = false;
-            this.buttmodifique.Click += new System.EventHandler(this.buttmodifique_Click);
+            this.btnModificar.BackColor = System.Drawing.Color.Red;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(129, 415);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(94, 34);
+            this.btnModificar.TabIndex = 7;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -249,39 +249,39 @@
             this.dgvProductos.TabIndex = 20;
             this.dgvProductos.SelectionChanged += new System.EventHandler(this.dgvProductos_SelectionChanged);
             // 
-            // imagentres
+            // picImagenTres
             // 
-            this.imagentres.BackColor = System.Drawing.Color.NavajoWhite;
-            this.imagentres.Image = global::ProyectoForms.cs.Properties.Resources._56373640_hueso_de_perro_de_juguete_tema_de_ilustración_de_arte_vectorial;
-            this.imagentres.Location = new System.Drawing.Point(241, 319);
-            this.imagentres.Name = "imagentres";
-            this.imagentres.Size = new System.Drawing.Size(87, 96);
-            this.imagentres.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagentres.TabIndex = 21;
-            this.imagentres.TabStop = false;
+            this.picImagenTres.BackColor = System.Drawing.Color.NavajoWhite;
+            this.picImagenTres.Image = global::ProyectoForms.cs.Properties.Resources._56373640_hueso_de_perro_de_juguete_tema_de_ilustración_de_arte_vectorial;
+            this.picImagenTres.Location = new System.Drawing.Point(241, 319);
+            this.picImagenTres.Name = "picImagenTres";
+            this.picImagenTres.Size = new System.Drawing.Size(87, 96);
+            this.picImagenTres.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picImagenTres.TabIndex = 21;
+            this.picImagenTres.TabStop = false;
             // 
-            // Imagendos
+            // picImagenDos
             // 
-            this.Imagendos.Image = global::ProyectoForms.cs.Properties.Resources.yellow_fancy_dog_puppy_avatar_badge_poster_logo_templates_print_illustration_in_flat_cartoon_style_vector__1_;
-            this.Imagendos.Location = new System.Drawing.Point(129, 319);
-            this.Imagendos.Name = "Imagendos";
-            this.Imagendos.Size = new System.Drawing.Size(90, 96);
-            this.Imagendos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Imagendos.TabIndex = 15;
-            this.Imagendos.TabStop = false;
-            this.Imagendos.Click += new System.EventHandler(this.Imagendos_Click);
+            this.picImagenDos.Image = global::ProyectoForms.cs.Properties.Resources.yellow_fancy_dog_puppy_avatar_badge_poster_logo_templates_print_illustration_in_flat_cartoon_style_vector__1_;
+            this.picImagenDos.Location = new System.Drawing.Point(129, 319);
+            this.picImagenDos.Name = "picImagenDos";
+            this.picImagenDos.Size = new System.Drawing.Size(90, 96);
+            this.picImagenDos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picImagenDos.TabIndex = 15;
+            this.picImagenDos.TabStop = false;
+            this.picImagenDos.Click += new System.EventHandler(this.picImagenDos_Click);
             // 
-            // ImagenUno
+            // picImagenUno
             // 
-            this.ImagenUno.BackgroundImage = global::ProyectoForms.cs.Properties.Resources.yellow_fancy_dog_puppy_avatar_badge_poster_logo_templates_print_illustration_in_flat_cartoon_style_vector;
-            this.ImagenUno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ImagenUno.ErrorImage = null;
-            this.ImagenUno.Location = new System.Drawing.Point(18, 319);
-            this.ImagenUno.Name = "ImagenUno";
-            this.ImagenUno.Size = new System.Drawing.Size(97, 96);
-            this.ImagenUno.TabIndex = 0;
-            this.ImagenUno.TabStop = false;
-            this.ImagenUno.Click += new System.EventHandler(this.ImagenUno_Click);
+            this.picImagenUno.BackgroundImage = global::ProyectoForms.cs.Properties.Resources.yellow_fancy_dog_puppy_avatar_badge_poster_logo_templates_print_illustration_in_flat_cartoon_style_vector;
+            this.picImagenUno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picImagenUno.ErrorImage = null;
+            this.picImagenUno.Location = new System.Drawing.Point(18, 319);
+            this.picImagenUno.Name = "picImagenUno";
+            this.picImagenUno.Size = new System.Drawing.Size(97, 96);
+            this.picImagenUno.TabIndex = 0;
+            this.picImagenUno.TabStop = false;
+            this.picImagenUno.Click += new System.EventHandler(this.picImagenUno_Click);
             // 
             // frmGestionProductos
             // 
@@ -289,35 +289,35 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(340, 665);
-            this.Controls.Add(this.imagentres);
+            this.Controls.Add(this.picImagenTres);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.buttmodifique);
-            this.Controls.Add(this.Imagendos);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.picImagenDos);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.textBoxNombre);
-            this.Controls.Add(this.textCodigo);
-            this.Controls.Add(this.texpaquete);
-            this.Controls.Add(this.cmbcategoria);
-            this.Controls.Add(this.textPrecio);
-            this.Controls.Add(this.lbldescription);
-            this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.lblMoney);
-            this.Controls.Add(this.lblStockk);
-            this.Controls.Add(this.lblcode);
-            this.Controls.Add(this.lblname);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtStock);
+            this.Controls.Add(this.cmbCategoria);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.lblPrecio);
+            this.Controls.Add(this.lblStock);
+            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.ImagenUno);
+            this.Controls.Add(this.picImagenUno);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestionProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de productos - PETSHOP";
             this.Load += new System.EventHandler(this.frmGestionProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagentres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagendos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenUno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenTres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenDos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenUno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,26 +325,26 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox ImagenUno;
+        private System.Windows.Forms.PictureBox picImagenUno;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Label lblcode;
-        private System.Windows.Forms.Label lblStockk;
-        private System.Windows.Forms.Label lblMoney;
-        private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.Label lbldescription;
-        private System.Windows.Forms.TextBox textPrecio;
-        private System.Windows.Forms.ComboBox cmbcategoria;
-        private System.Windows.Forms.TextBox texpaquete;
-        private System.Windows.Forms.TextBox textCodigo;
-        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label lblStock;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnGrabar;
-        private System.Windows.Forms.PictureBox Imagendos;
-        private System.Windows.Forms.Button buttmodifique;
+        private System.Windows.Forms.PictureBox picImagenDos;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvProductos;
-        private System.Windows.Forms.PictureBox imagentres;
+        private System.Windows.Forms.PictureBox picImagenTres;
     }
 }
 
